@@ -1,0 +1,298 @@
+Continuation of HTML….
+HTML 5.0 (2016)
+•	Doc specify the HTML Standards – W3c Reccomendations
+Syntax:		<! DOCTYPE html> - triggers “standards”
+		<head> - contains meta information about the document. 
+		<body> - contains the actual content of the document.
+HTML 5.1 
+P element - grouping element. P tag defines a paragraph. Is one of the most commonly used building blocks of HTML. Browsers automatically add some space (margin) before and after each <p> element. The margins can be modified with CSS (with the margin properties).
+img – empty element – content model. Is a container. It is not an image in and of itself, but a receptacle for one.
+Metadata – contain Meta information about the document. Metadata summarizes basic information about data, which can make finding and working with particular instances of data easier.
+Html – root of elements 
+Head – Meta information (title, base, link, Meta, style). Provides general information (metadata) about the document, including its title and links to its scripts and style sheets.
+Body – the actual content/data. Element represents the content of an HTML document. There can be only one <body> element in a document. 
+Base – specify an URL relative to your page. Specifies the base URL to use for all relative URLs contained within a document. There can be only one <base> element in a document.
+
+Tags for body: article, aside, nav, section, header, footer, main
+Address – contact information
+Div – generic divider
+H1, h2, h3, h4, h5, h6 - headers
+P 
+Hr (horizontal line) – thematic break 
+Pre (preformatted) 
+Blockquote, elite, q
+Ol, ul
+	Li 
+dL (description list( figure 
+figcapture
+a 
+em, strong, small, s
+dfn, abbr (defining (abbreviation) 
+ruby, rb, rt, rte, rp
+data, time
+code, var, samp, kbd
+sup, sub
+I, b, u, mark – html 4.01	(b drawn attention in html 5.1)
+Bdi, bdo – bidirectional 
+Span – inline text element
+Br, wbr – word break
+Ins, del – to show content
+Table 
+	Caption
+	Colgroup, col
+Forms 
+	Label 
+	Input
+
+WAI – ARIA WCAG
+Css – (cascading style sheets)
+-	Language used to specify the presentation aspects( e.g layout and formatting) of structurally marked up documents
+-	- developed by hakon wium lie (CHSS) and bert bos ( SSP) 
+Versions: 
+CSS1
+CSS2.1 – june 2011
+CSS3- modules
+NOTE: tags without level 3 – are entirely introduce as new
+•	CSS preprocessors, css frameworks, Sass less, 960 Gnd system bootstrap, foundation, materialize, etc.
+HTML/ XHTML stylesheets
+•	Author styles - is your browser such as IE or Chrome or Firefox.  It has its own default style sheet and has the lowest priority.  
+o	External style sheets (recommended) linking HTML to CSS link rel, type, href media. Is a separate file where you can declare all the styles that you want to use on your website. You then link to the external style sheet from all your HTML pages.
+This means you only need to set the styles for each element once. If you want to update the style of your website, you only need to do it in one place.
+•	user style – ( in browsers, allows you to use own style sheet)
+•	user agent styles ( example default css 2/styles for html 4) – applies default stylesheet by the browser
+o	reset css – stylesheet that defines your own styles/initial values 
+Embedded stylesheets – quick prototype; for page HTML inline style – making use of the <style>
+
+CSS Statements 
+•	AI Rules – (ex. @charset , @import, @media, @font-faces,@keyframes, @page) 
+•	CSS Rule sets (aka CSS Rules, Style Rules)
+-	Consist of a selector followed by a brace enclose with declarations block
+	Selector – structure used as a condition in CSS rule to determine which elements in the document tree are matched by the selector and are thus targeted by the formatting specified in CSS rule declaration block
+Selector syntax: 
+-	Chain of one or more sequences of simple selector separated by combinators, with one pseudo element possibly appended to the last sequence 
+Div # abc – sequence of selectors  
+>p.xyz[title]+
+>,+ - combinators
+P – type
+.xyz – class
+[title] attribute selector 
+Span: first-child:: after – pseudo element
+•	Sequence of simple selectors 
+-	Chain of simple selectors not separated by combinators 
+-	Always starts with a type selector or a universal selector.
+-	Cannot contain other type selector or universal selectore
+Invalid : p [aH] div; p*
+•	Group of selectors 
+-	Comma- separate list of selectors representing the union of all elements by each selectors in the list
+•	Simple selectors 
+Always starts with:
+o	Type selectors – names of elements ( p, div, span)
+o	Universal selector - *matches everything
+
+o	Attribute selector – [attr] (ex. Abbr [title])
+[attr| value] ( ex. <p lang = ‘en-US’>)
+	-language attribute
+o	Class selector – p.xyz - (p class = ‘xyz’)
+o	Id selector – for id attribute div [id = abc] div#abc
+o	Pseudo – class
+	Dynamic pseudo-class
+	Link pseudo classes
+:link
+:visited
+	User action pseudo classes
+:hover
+:active
+:focus
+	Target pseudo class
+:target (css3)  #id  target 
+	Language pseudo class 
+ 	:lang()  :lang(en){
+}
+	Ul elements stated pseudo class
+:enable
+:disabled
+:checked
+:intermediate
+	Structural pseudo –classes 
+:root  root element (target html element)
+:first-child
+:only-child
+:nth child 
+:nth-last-child – last child will be the first 
+
+
+Dom 3
+ 
+
+
+:first- of- type 
+:last-of –type
+:Only-of- type
+:Nth of-type()
+:nth- last of type()
+:empty  no children
+•	Negation pseudo class 
+o	:not()
+•	Combinators
+o	Descendant combinators any white space (whitespace, i.e space, tab, line feed, carriage return, form feed)
+o	Child combinators
+o	Sibling combinators
+-adjacent sibling combinators
+- General sibling (any p follows h1)
+•	Pseudo elements 
+::first-letter, :first-letter
+::first-line, :first-line
+::before, :before
+::after, :after
+
+CSS Rule Precedence
+•	By origin and importance (! Important) for important declarations
+o	User agent important declarations
+o	User important declarations
+o	Author important declarations
+o	Author normal declarations
+o	User normal declarations
+o	User agent normal declarations
+•	By specify
+o	Inline style
+o	Number of ID Selectors
+o	Number of class selectors, attribute selectors , and pseudo-classes
+o	Number of type selectors and pseudo elements
+•	By order- last
+
+CSS Declarations
+•	Properties 
+o	Shorthand properties 
+o	Vendor- specifis extensions
+•	Values
+o	Keywords
+o	Numbers( integers and reals in decimal notations)
+o	Dimensions (length, angle, duration, frequency, resolution)
+o	Length units 
+	Font-relative: em,e,ch,rem
+	Viewpoint – percentage: vw, wh, vmin, vmax
+	Absolute lengths: cm, mm, q, in, pt, pc, px
+o	Percentages
+o	Colors
+o	Strings
+o	Functions: calc(), attr(), counter(), counters(), linear gradient(), radial- gradient(), translate(), scale(), rotate(), etc.
+
+
+CSS Preprocessors, CSS Frameworks
+Css pre-processors - converts it into a valid form
+•	Sass – (syntactically awesome stylesheet)
+•	Scss (sassy css) 
+CSS Frameworks (bootstrap)
+
+Javascript (client- side scripting)
+Event handlers and events
+Three ways to insert script
+o	Embedded
+o	Inline
+o	
+
+•	Console.log (‘externally linked script’);  to be printed
+•	<script defer type = ‘text/javascript’ scr = script.js>  to improve the loading of scipt
+•	Async  the execution will be asynchronous
+•	<noscript> - to disable scripting 
+Window – represent current browsing window
+Window.navigator
+Window.screen – look at characteristic of screen
+Window.document – represent the document (.getElementById)
+
+•	.innerText, innerHTML  parse HTML doc, outerText, outerHTML
+•	innerHTML vs outerHTML
+innerHTML – just the content of (ex. H)
+outerHTML – it includes (Ex. H) itself 
+•	.setAttribute – for introducing a new attribute
+•	.getAttribuute – for retrieving 
+•	.style 
+•	QuerySelector – specify CSS selector
+•	 Matches
+•	Window.navigator.vendor
+Window.navigator.appName
+•	Document.querySelectorAll
+Document.querySelector(‘#list’)
+•	..setAttribute – set attribute value
+•	.getAttribute – return attribute value 
+•	.style – to change style
+•	.createElement
+•	.appendChild
+•	createTextNode
+•	insertBefore
+•	replaceChild
+•	removeChild
+•	cloneNode
+•	adoptNode
+•	remove experimental (not may be supported by the other web browsers)
+•	append  experimental (not may be supported by the other web browsers)
+
+•	imperative paradigm – javascript 
+Creating window property – (no keyword, var) 
+Standalone objects do not create window property - (let, const) 
+o	let – creates local variable but limited to or with in the c=block
+o	difference between let and const – let allows reassignment while const – doesn’t allow re-assignment
+o	console – property of the window
+DATA TYPES:
+•	simple (primitives)
+-	Boolean – (‘type of b’)
+-	‘Falsy’ or ‘truthy’  not really true but equivalent to true
+-	not really false but equivalent to false ( 0 is treated as false ) (empty strings are false) (undefined and null)
+•	there are not difference of integers and floating points
+•	Decimal, binary, octal, hexadecimal, scientific notation.
+-strings “sdfg” enclosed with single and double quotes 
+-Template literals - `  backslash quotes (can extend multiple lines, can execute string interpolation)
+ Undefined – anything that is not defined
+Null – empty reference
+•	Core javascript objects – Boolean, numbers
+•	String. Prototype
+•	Functions – procedural distractions
+No void function in javascript
+var multiply = (a,b)  {return a*b};
+var divide = (a,b)  a/b;
+•	Recursive
+Function factorial (n) {
+	If (n < 0 ) {
+		Throw “invalid argument.”;
+	}else if (n == 0 ){
+		Return 1;
+	}else{
+		Return n * factorial (n -1 ) ;
+}
+
+Throw, try, catch – catches anything in javascript.
+Javascript can nest function inside a function
+•	This, args, arguments  array; it only exists inside the function
+•	Default values
+•	Rest parameters
+•	Arrays – not preallocated
+Var emptyArray = new Array();
+Var alsoEmptyArray = [];
+-	Arrays are dynamic in size
+•	Mutator – change/mutate the actual value of the array
+Array.prototype.pop();
+Array.prototype.push();
+Array.prototype.fill();
+Array.prototype.shift();
+Array.prototype.unshift();
+Array.prototype.sort();
+Array.prototype.splice(); remove elements from array
+•	Iterators 
+Array.prototype.filter() example: a.filter((v,i,a))
+a.filter(v v%2 == 0 )
+Array.prototype.every()
+Array.prototype.find()
+Array.prototype.forEach()
+Array.prototype.keys()
+Array.prototype.reduce() – takes 4 argument
+•	Objects 
+Var emtyObj – new Object();
+Var alsoEmptyObj = {}
+
+
+REFERENCES: 
+http://whatis.techtarget.com/definition/metadata
+https://developer.mozilla.org/en/docs/Web/HTML/Element/head
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body
+http://www.quackit.com/css/external_style_sheets.cfm
+
