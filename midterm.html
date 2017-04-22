@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Webtek</title>
+        <script src ="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	</head>
+    
+    <body>
+        <header>
+        <div class="course">
+            <h1 class="course-title"><a href="index.html" class="title">WEB SYSTEMS AND TECHNOLOGIES</a></h1>
+        </div>
+		<nav id="navbar">
+            <ul id="navlist">
+                <li><a href="prelims.html" class="menulink" >Prelims</a></li>
+                <li><a href="midterms.html" class="menulink" id="active">Midterms</a></li>
+                <li><a href="finals.html" class="menulink">Finals</a></li>
+            </ul>
+		</nav>
+        <nav id="navbar-page">
+            <ul id="navlist-page">
+                <li><a href = "#div1" class="menulink">HTML</a></li>
+				<li><a href = "#div2" class="menulink">CSS</a></li>
+				<li><a href = "#div3" class="menulink">JAVASCRIPT</a></li>
+            </ul>
+		</nav>
+		</header>
+        <div class="main">
+            <div class="colour-block" id = "div1">
+                <h1 class="header"><abbr title="Hypertext Mark-up Language">HTML</abbr></h1>
+                <hr>
+                <p> HTML (HyperText Markup Language) is the most basic building block of the Web. It describes and defines the content of a webpage. Other technologies besides HTML are generally used to describe a webpage's appearance/presentation (CSS) or functionality (JavaScript).</p>
+                <p>"HyperText" refers to links that connect webpages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+                <p class="source">source:<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="link"> Mozilla Developer Network</a></p>
+                <h3 onclick="toggle('show1');" class="show">XML</h3>
+                <div id="show1" class="desc">
+                    <ul>
+                        <li>eXtensible Markup Language.</li> 
+                        <li>designed to store and transport data.</li> 
+                        <li>designed to be both human- and machine-readable.</li>
+                    </ul>
+                    <p>source:<a href="https://www.w3schools.com/xml/" class="link">W3School</a></p>
+                </div>
+                <h3 onclick="toggle('show2');" class="show">SGML</h3>
+                <div id="show2" class="desc">
+                    <ul>
+                        <li>Standard Generalized Markup Language.</li> 
+                        <li>defining markup languages.</li> 
+                        <li>defined in [ISO8879].</li>
+                    </ul>
+                    <p>source:<a href="https://www.w3.org/TR/WD-html40-970708/intro/sgmltut.html" class="link">W3C</a></p>
+                </div>
+                <h2 onclick="toggle('show3');" class="show">HTML Versions</h2>
+                <hr>
+                <article id="show3" class="desc">
+                    <h3 onclick="toggle('show4');" class="show">HTML 1.O</h3>
+                    <p id="show4" class="desc">HTML 1.0 was the first release of HTML to the world. Not many people were involved in website creation at the time, and the language was very limiting.</p>
+                    <h3 onclick="toggle('show5');" class="show">HTML 2.O</h3>
+                    <p id="show5" class="desc">HTML 2.0 included everything from the original 1.0 specifications but added a few new features to the mix. HTML 2.0 was the standard for website design until January 1997 and defined many core HTML features for the first time.</p>
+                    <h3 onclick="toggle('show6');" class="show">HTML 3.O</h3>
+                    <p id="show6" class="desc">led by Dave Raggett, introduced a new HTML draft, HTML 3.0. It included many new and improved abilities for HTML, and promised far more powerful opportunities for webmasters to design their pages.</p>
+                    <h3 onclick="toggle('show7');" class="show">HTML 3.2</h3>
+                    <p id="show7" class="desc">The W3C was founded in 1994 to standardise the language and keep it evolving in the right direction. Their first work was code-named WILBUR, and later became known as HTML 3.2. This was a toned-down change to the existing standards, leaving many of the big steps forward for later versions. It soon caught on and became the official standard in January ’97.</p>
+                    <h3 onclick="toggle('show8');" class="show">HTML 4.O</h3>
+                    <p id="show8" class="desc">HTML 4.0 was a large evolution of the HTML standards, and the last iteration of classic HTML. Early in development it had the code-name COUGAR. Most of the new functionality brought in this time is from the ill-fated HTML 3.0 spec, as well as a host of trimmings on old tags, a focus on internationalisation, and support for HTML’s new supporting presentational language, cascading stylesheets.</p>
+                    <h3 onclick="toggle('show9');" class="show">HTML 4.O1</h3>
+                    <p id="show9" class="desc">Once HTML 4.0 had been out for a little while, the documentation was revised and corrected in a few minor ways and was entitled HTML 4.01; the final version of the specification.</p>
+                    <h3 onclick="toggle('show10');" class="show">XHTML 1.O</h3>
+                    <p id="show10" class="desc">W3C issued their specifications of XHTML 1.0 as a recommendation. Since January 26, 2000 it stands as the joint-standard with HTML 4.01. XHTML marks a departure from the way new specs have worked — it is an entirely new branch of HTML, incorporating the rigours of XML.</p>
+                    <h3 onclick="toggle('show11');" class="show">XHTML 1.1</h3>
+                    <p id="show11" class="desc">In XHTML 1.0, this move was moderated by a goal of providing for easy migration of existing, HTML 4 (or earlier) based content to XHTML and XML.</p>
+                    <h3 onclick="toggle('show12');" class="show">XHTML 2.O</h3>
+                    <p id="show12" class="desc">XHTML 2 is a general purpose markup language designed to represent documents for a wide range of purposes across the World Wide Web.</p>
+                    <h3 onclick="toggle('show13');" class="show">HTML 5</h3>
+                    <article id="show13" class="desc">
+                        <p>It was around this time that a bunch of pragmatic web technology fans, browser programmers and specification writers started building something of their own, outside of the usual W3C procedures. They called themselves the Web Hypertext Application Technology Working Group (WHATWG), and developed a new spec. After some soul-searching, the W3C decided that HTML was still the future of the web. XHTML 2 was discontinued and HTML5 became the new specification that everyone’s effort should be poured into.</p>
+                        <p>Doc specify the HTML Standards – W3c Reccomendations</p>
+                        <h4 onclick="toggle('show14');" class="show">Syntax</h4>
+                        <ul id="show14" class="desc">
+                            <li>! DOCTYPE html - triggers “standards”</li>             <li>head tag - contains meta information about the document.</li> 
+                            <li>body tag - contains the actual content of the document.</li>
+                        </ul>
+                    </article>
+                    <h3 onclick="toggle('show15');" class="show">HTML 5.1</h3>
+                    <div id="show15" class="desc">
+                        <p>If a document is transmitted with the text/html MIME type, then it will be processed as an HTML document by Web browsers. This specification defines the latest version of the HTML syntax, known as "HTML 5.1".</p>
+                    </div>
+                    <p>sources:
+                        <br><a href="www.yourhtmlsource.com" class="link"> Mozilla Developer Network</a>
+                        <br><a href="https://www.w3.org" class="link"> W3C</a>
+                    </p>
+                </article>
+                <h2 onclick="toggle('show16');" class="show">Syntax Of HTML 5</h2>
+                <hr>
+                <div id="show16" class="desc">
+                    <h3 onclick="toggle('show16-1');" class="show">p</h3>
+                    <p id="show16-1" class="desc">grouping element. P tag defines a paragraph. Is one of the most commonly used building blocks of HTML. Browsers automatically add some space (margin) before and after each p element. The margins can be modified with CSS (with the margin properties).</p>
+                    <h3 onclick="toggle('show16-2');" class="show">img-empty</h3>
+                    <p id="show16-2" class="desc">content model. Is a container. It is not an image in and of itself, but a receptacle for one.</p>
+                    <h3 onclick="toggle('show16-3');" class="show">metadata</h3> 
+                    <p id="show16-3" class="desc">contain Meta information about the document. Metadata summarizes basic information about data, which can make finding and working with particular instances of data easier.</p>
+                    <h3 onclick="toggle('show16-4');" class="show">html</h3>
+                    <p id="show16-4" class="desc">root of elements</p>
+                    <h3 onclick="toggle('show16-5');" class="show">head</h3>
+                    <p id="show16-5" class="desc">Meta information (title, base, link, Meta, style). Provides general information (metadata) about the document, including its title and links to its scripts and style sheets.</p>
+                    <h3 onclick="toggle('show16-6');" class="show">body</h3>
+                    <p id="show16-6" class="desc">the actual content/data. Element represents the content of an HTML document. There can be only one body element in a document.</p>
+                    <h3 onclick="toggle('show16-7');" class="show">base</h3>
+                    <p id="show16-7" class="desc">specify an URL relative to your page. Specifies the base URL to use for all relative URLs contained within a document. There can be only one base element in a document.</p>
+                </div>
+                <h2 onclick="toggle('show17');" class="show">Tags For Body Elment</h2>
+                <hr>
+                <div id="show17" class="desc">
+                    <h3>address</h3>
+                    <h3>div</h3>
+                    <h3 onclick="toggle('show17-1');" class="show">headers</h3>
+                    <div id="show17-1" class="desc">
+                        <p>h1</p>
+                        <p>h2</p>                           
+                        <p>h3</p>
+                        <p>h4</p>
+                        <p>h5</p>
+                        <p>h6</p>
+                    </div>
+                    <h3>hr</h3>
+                    <h3>pre</h3>
+                    <h3>blockquote, elite, q</h3>
+                    <h3 onclick="toggle('show17-2');" class="show">ol, ul</h3>
+                    <div id="show17-2" class="desc">
+                        <p>li</p>
+                    </div>
+                    <h3>dl</h3>
+                    <h3>san</h3>
+                    <h3>del</h3>
+                    <h3 onclick="toggle('show17-3');" class="show">figure</h3>
+                    <div id="show17-3" class="desc">
+                        <p>figcapture</p>
+                    </div>
+                    <h3>a</h3>
+                    <h3>em, strong, small, s</h3>
+                    <h3>dfn, abbr</h3>
+                    <h3>ruby, rb, rt, rte, rp</h3>
+                    <h3>data, time</h3>
+                    <h3>code, var, samp, kbd</h3>
+                    <h3>sup, sub</h3>
+                    <h3>i, b, u, mark</h3>
+                    <h3>bdi, bdo</h3>
+                    <h3>span</h3>
+                    <h3>br, wbr</h3>
+                    <h3>ins, del</h3>
+                    <h3 onclick="toggle('show17-4');" class="show">table</h3>
+                    <div id="show17-4" class="desc">
+                        <p>caption</p>
+                        <p>colgroup, col</p>
+                        <p onclick="toggle('show17-5');" class="show">thread, tbody, tfoot</p>
+                        <div id="show17-5" class="desc">
+                            <p onclick="toggle('show17-6');" class="show">tr</p>
+                            <div id="show17-6" class="desc">
+                                <p>th</p>
+                                <p>td</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 onclick="toggle('show17-7');" class="show">form</h3>
+                    <div id="show17-7" class="desc">
+                        <h3>input</h3>
+                        <h3>label</h3>
+                        <h3>button</h3>
+                        <h3>select</h3>
+                    </div>
+                </div>
+	       </div>
+            
+            <div class="arrow-down"></div>
+            <div class="white-block" id = "div2">
+                <h1 class="header"><abbr title="Cascading Style Sheet">CSS</abbr></h1>
+                <hr>
+                <p>Language used to specify the presentation aspects( e.g layout and formatting) of structurally marked up documents</p>
+                <p>Developed by Hakon Wium Lie (CHSS) and Bert Bos (SSP) </p>
+                <h2 onclick="toggle('show18');" class="show">CSS Versions</h2>
+                <hr>
+                <article id="show18" class="desc">
+                    <h3>CSS 1 (December 17, 1996)</h3>
+                    <h3>CSS 2.1 (June 7, 2011)</h3>
+                    <h3>CSS 3</h3>
+                </article>
+                <h2 onclick="toggle('show19');" class="show">CSS Processors and CSS Frameworks</h2>
+                <hr>
+                <div id="show19" class="desc">
+                    <ul>
+                        <li>SaSS</li>
+                        <li>Less</li>
+                        <li>960 Grid System</li>
+                        <li>Bootstrap</li>
+                        <li>Foundation</li>
+                        <li>Materialize</li>
+                        <li>etc.</li>
+                    </ul>
+                </div>
+                <h2 onclick="toggle('show20');" class="show">HTML/XHTML Stylesheets</h2>
+                <hr>
+                <article id="show20" class="desc">
+                    <h3 onclick="toggle('show20-1');" class="show">Author Styles</h3>
+                    <article id="show20-1" class="desc">
+                        <p>CSS created by the author. Default style sheet and has the lowest priority.</p>
+                        <h4 onclick="toggle('show20-2');" class="show">External Styles Sheet</h4>
+                        <p id="show20-2" class="showdesc" onclick="toggle('show20-3');">link elements</p>
+                        <ul id="show20-3" class="desc">
+                            <li>rel</li>
+                            <li>type</li>
+                            <li>href</li>
+                            <li>media</li>
+                        </ul>
+                        <h4 onclick="toggle('show20-4');" class="show">Embeded Styles</h4>
+                        <p id="show20-4" class="showdesc" onclick="toggle('show20-5');">style element</p>
+                        <ul id="show20-5" class="desc">
+                            <li>meta</li>
+                        </ul>
+                        <h4 onclick="toggle('show20-6');" class="show">Inline Styles</h4>
+                        <p id="show20-6" class="desc">style attribute</p>
+                    </article>
+                    <h3 onclick="toggle('show20-7');" class="show">User Styles</h3>
+                    <p id="show20-7" class="desc">style use by the author</p>
+                    <h3 onclick="toggle('show20-8');" class="show">User Agent Styles</h3>
+                    <p id="show20-8" class="desc">Default stylesheet by the browser</p>
+                </article>
+                <h2 onclick="toggle('show21');" class="show">CSS Statements</h2>
+                <hr>
+                <article id="show21" class="desc">
+                    <h3 onclick="toggle('show21-1');" class="show">@ Rules</h3>
+                    <ul id="show21-1" class="desc">
+                        <li>@charset</li>
+                        <li>@import</li>
+                        <li>@media</li>
+                        <li>@font-face</li>
+                        <li>@keyframe</li>
+                        <li>@page</li>
+                        <li>@namespace</li>
+                        <li>@document</li>
+                    </ul>
+                    <h3 onclick="toggle('show21-2');" class="show">CSS Rule Sets (a.k.a CSS RulesStyle Rules)</h3>
+                    <p id="show21-2" class="desc">Consist of a selector followed by a brace enclose with declarations block</p>
+                </article>
+                <h2 onclick="toggle('show22');" class="show">CSS Selectors</h2>
+                <hr>
+                <article id="show22" class="desc">
+                    <h3 onclick="toggle('show22-1');" class="show">Selector</h3>
+                    <p id="show22-1" class="desc">Structure used as a condition in CSS rule to determine which elements in the document tree are matched by the selector and are thus targeted by the formatting specified in CSS rule declaration block</p>
+                    <h3 onclick="toggle('show22-2');" class="show">Selector Syntax</h3>
+                    <div id="show22-2" class="desc">
+                        <p>Chain of one or more sequences of simple selector separated by combinators, with one pseudo element possibly appended to the last sequence </p>
+                        <p>e.g.</p>
+                        <p>div#abc>p.xyz[title]+span:first-child::after</p>
+                        <p>Sequence of simple selectors</p>
+                        <ul>
+                            <li>Chain of simple selectors not separated by combinators</li>
+                            <li>Always starts with a type selector or a universal selector.</li>
+                            <li>Cannot contain other type selector or universal selectore</li>
+                        </ul>
+                        <p>Group of selectors</p>
+                        <ul>
+                            <li>Comma. separate list of selectors representing the union of all elements by each selectors in the list</li>
+                        </ul>
+                    </div>
+                    <h3 onclick="toggle('show22-3');" class="show">Simple Selectors</h3>
+                    <div id="show22-3" class="desc">
+                        <h4 onclick="toggle('show22-4');" class="show">Type Selector</h4>
+                        <div id="show22-4" class="desc">
+                            <p>names of elements</p>
+                            <ul>
+                                <li>p</li>
+                                <li>div</li>
+                                <li>san</li>
+                            </ul>
+                        </div>
+                        <h4 onclick="toggle('show22-5');" class="show">Universal Set</h4>
+                        <p id="show22-5" class="desc">matches everything</p>
+                        <h4 onclick="toggle('show22-6');" class="show">Attribute Set</h4>
+                        <div id="show22-6" class="desc">
+                            <p>[attr] (ex. Abbr [title])</p>
+                            <p>[attr| value]</p>
+                        </div>
+                        <h4 onclick="toggle('show22-7');" class="show">Class Set</h4>
+                        <p id="show22-7" class="desc">p.xyz (p class = ‘xyz’)</p>
+                        <h4 onclick="toggle('show22-8');" class="show">ID Set</h4>
+                        <div id="show22-8" class="desc">
+                            <p>for ID attribute</p>
+                            <p>[id = abc] = div#abc</p>
+                        </div>
+                        <h4 onclick="toggle('show22-9');" class="show">Pseudo Set</h4>
+                        <div id="show22-9" class="desc">
+                            <p onclick="toggle('show22-10');" class="show">Dynamic Pseudo-Class</p>
+                            <div id="show22-10" class="desc">
+                                <p onclick="toggle('show22-11');" class="show">Link Pseudo-Class</p>
+                                <ul id="show22-11" class="desc">
+                                    <li>:link</li>
+                                    <li>:visited</li>
+                                </ul>
+                                <p onclick="toggle('show22-12');" class="show">User action Pseudo-Class</p>
+                                <ul id="show22-12" class="desc">
+                                    <li>:hover</li>
+                                    <li>:active</li>
+                                    <li>:focus</li>
+                                </ul>
+                            </div>
+                            <p onclick="toggle('show22-13');" class="show">Target Pseudo-Class</p>
+                            <ul id="show22-13" class="desc">
+                                <li>:target</li>
+                            </ul>
+                            <p onclick="toggle('show22-14');" class="show">Language Pseudo-Class</p>
+                            <ul id="show22-14" class="desc">
+                                <li>:lang()</li>
+                            </ul>
+                            <p onclick="toggle('show22-15');" class="show">UI Element States Pseudo-Class</p>
+                            <ul id="show22-15" class="desc">
+                                <li>:enabled</li>
+                                <li>:disabled</li>
+                                <li>:checked</li>
+                                <li>:indeterminate</li>
+                            </ul>
+                            <p onclick="toggle('show22-16');" class="show">Structural Pseudo-Class</p>
+                            <ul id="show22-16" class="desc">
+                                <li>:root</li>
+                                <li>:first-child</li>
+                                <li>:last-child</li>
+                                <li>:only-child</li>
+                                <li>:nth-child()</li>
+                                <li>:nth-last-child()</li>
+                                <li>:first-of-type</li>
+                                <li>:last-of-type</li>
+                                <li>:only-of-type</li>
+                                <li>:nth-of-type</li>
+                                <li>:nth-last-of-type()</li>
+                                <li>:empty</li>
+                            </ul>
+                            <p onclick="toggle('show22-17');" class="show">Negation Pseudo-Class</p>
+                            <ul id="show22-17" class="desc">
+                                <li>:not()</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 onclick="toggle('show22-18');" class="show">Combinators</h3>
+                    <div id="show22-18" class="desc">
+                        <h4 onclick="toggle('show22-19');" class="show">Descendant Combinator</h4>
+                        <p id="show22-19" class="desc">any white space<p>
+                        <h4>Child Combinator</h4>
+                        <h4 onclick="toggle('show22-20');" class="show">Sibling Combinator</h4>
+                        <div id="show22-20" class="desc">
+                            <p>Adjacent Sibling Combinator(+)</p>
+                            <p>General Sibling Combinator (~)</p>
+                        </div>
+                    </div>
+                    <h3 onclick="toggle('show22-21');" class="show">Pseudo Elements</h3>
+                    <ul id="show22-21" class="desc">
+                        <li>::first-letter, :first-letter</li>
+                        <li>::first-line, :first-line</li>
+                        <li>::before, :before</li>
+                        <li>::after, :after</li>
+                    </ul>
+                </article>
+                <h2 onclick="toggle('show23');" class="show">CSS Rule Presedence</h2>
+                <hr>
+                <article id="show23" class="desc">
+                    <h3 onclick="toggle('show23-1');" class="show">By Origin and Importance</h3>
+                    <ul id="show23-1" class="desc">
+                        <li>user agent important declaration</li>
+                        <li>user important declaration</li>
+                        <li>author important declaration</li>
+                        <li>author normal declaration</li>
+                        <li>user normal declaration</li>
+                        <li>user agent normal declaration</li>
+                    </ul>
+                    <h3 onclick="toggle('show23-2');" class="show">By Specificty</h3>
+                    <ul id="show23-2" class="desc">
+                        <li>inline style</li>
+                        <li>number of ID selector</li>
+                        <li>number of class selector, attribute selector, and pseudo-classes</li>
+                        <li>number of type selector and pseudo elements</li>
+                    </ul>
+                    <h3 onclick="toggle('show23-3');" class="show">By Order</h3>
+                    <ul id="show23-3" class="desc">
+                        <li>last declaration</li>
+                    </ul>
+                </article>
+                <h2 onclick="toggle('show24');" class="show">CSS Declaration</h2>
+                <hr>
+                <article id="show24" class="desc">
+                    <h3 onclick="toggle('show24-1');" class="show">Properties</h3>
+                    <div id="show24-1" class="desc">
+                        <p>short hand properties</p>
+                        <p>extension properties</p>
+                    </div>
+                    <h3 onclick="toggle('show24-2');" class="show">Values</h3>
+                    <div id="show24-2" class="desc">
+                        <p>keywords</p>
+                        <p>number</p>
+                        <p onclick="toggle('show24-3');" class="show">dimension</p>
+                        <div id="show24-3" class="desc">
+                            <p>length, angle, duration, frequency, resolution</p>
+                            <p onclick="toggle('show24-4');" class="show">length unit</p>
+                            <div id="show24-4" class="desc">
+                                <p>length, angle, duration, frequency, resolution</p>
+                                <p onclick="toggle('show24-5');" class="show">length unit</p>
+                                    <ul id="show24-5" class="desc">
+                                        <li>font-relative: em, ex, cn, rem</li>
+                                        <li>view-percentage: vw, vh, q, vmin, vmax</li>
+                                        <li>absolute lengths: cm, mm, a, in, pt, pc, px</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <p>percentages</p>
+                        <p>URLs and URIs</p>
+                        <p>colors</p>
+                        <p>strings</p>
+                        <p onclick="toggle('show24-6');" class="show">functions</p>
+                        <ul id="show24-6" class="desc">
+                            <li>calc()</li>
+                            <li>attr()</li>
+                            <li>counter()</li>
+                            <li>counters()</li>
+                            <li>linear-gradient()</li>
+                            <li>radial-gradient()</li>
+                            <li>translate()</li>
+                            <li>scale()</li>
+                            <li>rotate()</li>
+                            <li>etc.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+			
+		<div class="arrow-up"></div>
+		<div class="colour-block" id = "div3">
+            <h1 class="header">Java Script</h1>
+            <h2 class="header2">Client-Side Scripting</h2>
+            <hr>
+            <p>A high-level, dynamic, untyped, and interpreted run-time language. It has been standardized in the ECMAScript language specification.</p>
+            <p>source:<a href="https://en.wikipedia.org/wiki/JavaScript" class="link"> Wikipedia</a></p>
+            <h2 onclick="toggle('show25');" class="show">Client-side Scripting</h2>
+            <hr>
+            <div id="show25" class="desc">
+            <p>Running a program in the environment of a browser</p>
+                <ul>
+                    <li>Java Script</li>
+                    <li>Flash</li>
+                </ul>
+            </div>
+            <h2 onclick="toggle('show26');" class="show">3 Ways to insert Scripts</h2>
+            <hr>
+            <ul id="show26" class="desc">
+                <li>Embedded</li>
+                <li>Inline</li>
+                <li>Source</li>
+            </ul>
+            <h2 onclick="toggle('show27');" class="show">Scripts</h2>
+            <hr>
+            <article id="show27" class="desc">
+                <h3 onclick="toggle('show27-1');" class="show">Global Code</h3>
+                <img id="show27-1" class="desc" src="images/img1.png" alt="script"/>
+                <h3 onclick="toggle('show27-2');" class="show">function Method()</h3>
+                <img id="show27-2" class="desc" src="images/img2.png" alt="script"/>
+                <h3 onclick="toggle('show27-3');" class="show">defer vs. async</h3>
+                <div id="show27-3" class="desc">
+                    <h4>defer</h4>
+                    <img src="images/img3.png" alt="script"/>
+                    <p>while fetching the source(src), then it will continue the rendering.</p>
+                    <h4>async</h4>
+                    <img src="images/img4.png" alt="script"/>
+                    <p>while fetching the source(src), it also continue rendering, compile, and execute.</p>
+                </div>
+                <h3 onclick="toggle('show27-4');" class="show">Window</h3>
+                <div id="show27-4" class="desc">
+                    <p>represent current browsing window</p>
+                    <div>
+                        <p>Window.navigator</p>
+                        <p>Window.screen</p>
+                        <p>Window.document</p>
+                        <ul>
+                            <li>.get ElementsById</li>
+                            <li>.get ElementsByClass</li>
+                            <li>.get ElementsByName</li>
+                            <li>.get ElementsByTagName</li>
+                            <li>.get ElementsByTagNameNS</li>
+                            <li>.get Selection</li>
+                            <li>.get RootNode</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 onclick="toggle('show27-5');" class="show">Query Selector</h3>
+                <div id="show27-5" class="desc">
+                    <p>specify CSS Selector</p>
+                    <ul>
+                        <li>.query Selector</li>
+                        <li>.query Selector All</li>
+                    </ul>
+                </div>
+                <h3 onclick="toggle('show27-6');" class="show">Matches</h3>
+                <div id="show27-6" class="desc">
+                    <img src="images/img5.png" alt="script"/>
+                    <p>therefore true</p>
+                    <img src="images/img6.png" alt="script"/>
+                    <p>therefore false</p>
+                </div>
+                <h3 onclick="toggle('show27-7');" class="show">Inner HTML vs. Outer HTML</h3>
+                <div id="show27-7" class="desc">
+                    <h4>Inner HTML</h4>
+                    <p>just the content of (ex. H)</p>
+                    <h4>Outer HTML</h4>
+                    <p>it includes (Ex. H) itself</p>
+                </div>
+                <h3 onclick="toggle('show27-8');" class="show">Set Attribute</h3>
+                <div id="show27-8" class="desc">
+                    <p>set attribute value</p>
+                    <img src="images/img7.png" alt="script"/>
+                </div>
+                <h3 onclick="toggle('show27-9');" class="show">Get Attribute</h3>
+                <div id="show27-9" class="desc">
+                    <p>for retrieving the attribute value</p>
+                    <img src="images/img8.png" alt="script"/>
+                </div>
+                <h3 onclick="toggle('show27-10');" class="show">Style</h3>
+                <div id="show27-10" class="desc">
+                    <p>to change style inside the java script</p>
+                    <img src="images/img9.png" alt="script"/>
+                </div>
+                <h3 onclick="toggle('show27-11');" class="show">Arrays</h3>
+                <div id="show27-11" class="desc">
+                    <p>not pre-allocated</p>
+                    <p>dynamic in size</p>
+                    <ul>
+                        <li>Var emptyArray = new Array();</li>
+                        <li>Var alsoEmptyArray = [];</li>
+                    </ul>
+                </div>
+                <h3 onclick="toggle('show27-12');" class="show">Mutator</h3>
+                <div id="show27-12" class="desc">
+                    <p>change/mutate the actual value of the array</p>
+                    <ul>
+                        <li>Array.prototype.pop();</li>
+                        <li>Array.prototype.push();</li>
+                        <li>Array.prototype.fill();</li>
+                        <li>Array.prototype.shift();</li>
+                        <li>Array.prototype.unshift();</li>
+                        <li>Array.prototype.sort();</li>
+                        <li>Array.prototype.splice();</li>
+                    </ul>
+                </div>
+                <h3 onclick="toggle('show27-13');" class="show">Iterator</h3>
+                <div id="show27-13" class="desc">
+                    <ul>
+                        <li>Array.prototype.filter();</li>
+                        <li>Array.prototype.every();</li>
+                        <li>Array.prototype.find();</li>
+                        <li>Array.prototype.forEach();</li>
+                        <li>Array.prototype.keys();</li>
+                        <li>Array.prototype.reduce();</li>
+                    </ul>
+                </div>
+                <h3 onclick="toggle('show27-14');" class="show">Objects</h3>
+                <div id="show27-14" class="desc">
+                    <ul>
+                        <li>Var emtyObj – new Object();</li>
+                        <li>Var alsoEmptyObj = {}</li>
+                    </ul>
+                </div>
+            </article>
+            <h2 onclick="toggle('show28');" class="show">Imperative Paradigm</h2>
+            <article id="show28" class="desc">
+                <h3 onclick="toggle('show28-1');" class="show">Creating window property</h3>
+                <ul id="show28-1" class="desc">
+                    <li>no keyword</li>
+                    <li>var</li>
+                </ul>
+                <h3 onclick="toggle('show28-2');" class="show">Stand alone objects</h3>
+                <div id="show28-2" class="desc">
+                    <p onclick="toggle('show28-3');" class="show">let</p>
+                    <p id="show28-3" class="desc">creates local variable but limited to or with in the c=block</p>
+                    <p onclick="toggle('show28-4');" class="show">const</p>
+                    <p id="show28-4" class="desc">creates local variable but limited to or with in the c=block but doesn't allow re-assignment</p>
+                    <p onclick="toggle('show28-5');" class="show">console</p>
+                    <p id="show28-5" class="desc">property of the window</p>
+                </div>
+            </article>
+            <hr>
+            <h2 onclick="toggle('show29');" class="show">Data Types</h2>
+            <hr>
+            <article id="show29" class="desc">
+                <h3 onclick="toggle('show29-1');" class="show">Simple (Primitive)</h3>
+                <ul id="show29-1" class="desc">
+                    <li>Boolean</li>
+                    <li>Falsy or Truthy</li>
+                </ul>
+                <h3>Integers and Floating points</h3>
+                <h3 onclick="toggle('show29-2');" class="show">Decimal, binary, octal, hexadecimal, scientific notation</h3>
+                <ul id="show29-2" class="desc">
+                    <li>String</li>
+                    <li>Template literals</li>
+                    <li class="list-item">
+                        <div>
+                            <ul>
+                                <li>backslash quotes</li>
+                                <li>Undefined</li>
+                                <li>Null</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <h3 onclick="toggle('show29-3');" class="show">Core javascript objects</h3>
+                <ul id="show29-3" class="desc">
+                    <li>Boolean</li>
+                    <li>numbers</li>
+                </ul>
+                <h3>String. Prototype</h3>
+                <h3 onclick="toggle('show29-4');" class="show">Functions</h3>
+                <img id="show29-4" class="desc" src="images/img10.png" alt="script"/>
+                <h3 onclick="toggle('show29-5');" class="show">Recursive</h3>
+                <img id="show29-5" class="desc" src="images/img11.png" alt="script"/>
+            </article>
+		</div>
+		<footer class="footer">
+			<p class="parabottom">© 2017 IT324L</p>
+		</footer>
+
+        </div>
+    </body>
+</html>
